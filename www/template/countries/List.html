@@ -1,0 +1,9 @@
+<ion-view view-title="Pays">
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="country in countries" ui-sref="countryDetail({iso2:country.iso2 , pays:country.name})">
+          {{country.name}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+</ion-view>
